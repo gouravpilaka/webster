@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffea00;
+}
+
+li {
+  float: left;
+}
+
+li a, .menu {
+  display: inline-block;
+  color: purple;
+  font-weight: bold;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .drop:hover .menu {
+  background-color: white;
+}
+
+
+li.drop {
+  display: inline-block;
+}
+
+.box {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+}
+
+.box a {
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.box a:hover {background-color: #f1f1f1;}
+
+.drop:hover .box {
+  display: block;
+  
+}
+</style>
+</head>
+<body style="background-color:black;">
+<nav>
+<ul>
+<h1 style="font-family:courier">GARY'S OBJECTS</h1>
+
+  <li class="drop">
+    <a href="#" class="menu">Colours</a>
+    <div class="box">
+      <a href="#">mustard</a>
+      <a href="#">midnight</a>
+      <a href="#">snow</a>
+    
+   </div>
+   <i class="fa fa-tint"></i>
+  </li>
+  
+  <li class="drop">
+    <a href="#" class="menu">Shapes</a>
+    <div class="box">
+      <a href="#">square </a>
+      <a href="#">triangle</a>
+      <a href="#">circle</a>
+    </div>
+    <i class="fa fa-bullseye" style="font-size:20px;"></i>
+  </li>
+  <li class="drop">
+    <a href="#" class="menu">Sizes</a>
+    <div class="box">
+      <a href="#">small</a>
+      <a href="#">medium</a>
+      <a href="#">Large</a>
+    </div>
+    <i class="fa fa-compress"></i>
+  </li>
+</ul>
+</nav>
+
+</body>
+</html>
